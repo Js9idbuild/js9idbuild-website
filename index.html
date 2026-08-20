@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JS Interior Design & Build | Renovation Contractor Johor Bahru</title>
+<meta name="description" content="JS Interior Design & Build provides renovation, construction, interior design, extension, demolition, tiling, electrical, plumbing, plaster ceiling, painting and waterproofing services in Johor Bahru, Skudai and Johor.">
+<meta name="keywords" content="Johor Bahru renovation contractor, JB renovation, Skudai renovation, interior design Johor Bahru, construction Johor, house renovation JB, renovation contractor Johor">
+<link rel="canonical" href="https://www.js9idbuild.com.my/">
+<style>
+:root{--red:#b90012;--red2:#e0182d;--black:#111;--ink:#242424;--soft:#f5f5f5;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;color:var(--ink);background:white}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 18px #0002;display:flex;align-items:center;justify-content:space-between;padding:0 5%}
+.brand{background:var(--red);color:#fff;padding:18px 22px;font-weight:900;letter-spacing:.4px}nav a{color:#222;text-decoration:none;margin:0 10px;font-weight:700}
+.lang button{border:1px solid #ddd;background:#fff;padding:8px 10px;cursor:pointer}.hero{min-height:68vh;background:linear-gradient(90deg,#000c,#0005),url('images/projects/project-001.jpg') center/cover;display:flex;align-items:center;padding:7%;color:#fff}
+.hero-box{max-width:760px}h1{font-size:clamp(36px,6vw,70px);margin:0 0 15px}.hero p{font-size:20px;line-height:1.6}.cta{display:inline-block;background:var(--red2);color:#fff;text-decoration:none;padding:15px 22px;border-radius:5px;font-weight:800;margin:8px 8px 0 0}
+section{padding:70px 6%}h2{font-size:36px;margin:0 0 12px}.lead{max-width:850px;line-height:1.7;color:#555}.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:28px}.service{background:var(--soft);border-top:4px solid var(--red);padding:22px;font-weight:800}
+.projects{background:#111;color:#fff}.projects .lead{color:#ccc}.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:28px}.photo{border:0;padding:0;background:#222;cursor:pointer;overflow:hidden;aspect-ratio:4/3}.photo img{width:100%;height:100%;object-fit:cover;transition:.25s}.photo:hover img{transform:scale(1.04)}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px}.contact{background:var(--red);color:#fff}footer{background:#090909;color:#aaa;padding:28px 6%;text-align:center}
+#lightbox{display:none;position:fixed;z-index:99;inset:0;background:#000e;align-items:center;justify-content:center;padding:20px}#lightbox img{max-width:95vw;max-height:90vh}#lightbox span{position:absolute;right:25px;top:15px;color:white;font-size:42px;cursor:pointer}
+@media(max-width:800px){header{padding:0;flex-wrap:wrap}.brand{width:100%;text-align:center}nav{padding:12px;width:100%;text-align:center;overflow:auto;white-space:nowrap}.lang{position:absolute;right:5px;top:8px}.lang button{font-size:11px;padding:5px}.hero{min-height:70vh}section{padding:50px 5%}.about-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">JS INTERIOR DESIGN & BUILD</div>
+<nav>
+<a href="#home" data-t="navHome">Home</a><a href="#services" data-t="navServices">Services</a><a href="#projects" data-t="navProjects">Projects</a><a href="#about" data-t="navAbout">About</a><a href="#contact" data-t="navContact">Contact</a>
+</nav>
+<div class="lang"><button onclick="setLang('en')">EN</button><button onclick="setLang('zh')">中文</button><button onclick="setLang('ms')">BM</button></div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-box">
+<h1 data-t="heroTitle">Build Better. Renovate Smarter.</h1>
+<p data-t="heroText">Renovation, construction and interior solutions for homes, shops, offices and commercial spaces across Johor Bahru.</p>
+<a class="cta" href="https://wa.me/60177603828" data-t="quote">WhatsApp for Quotation</a>
+<a class="cta" href="#projects" data-t="works">View Real Projects</a>
+</div>
+</section>
+
+<section id="services">
+<h2 data-t="servicesTitle">Our Services</h2>
+<p class="lead" data-t="servicesLead">One team for renovation and construction — from demolition and structural work to finishing and handover.</p>
+<div class="services">
+<div class="service" data-t="s1">Renovation & Extension</div><div class="service" data-t="s2">Construction & Cement Works</div>
+<div class="service" data-t="s3">Wall & Floor Tiling</div><div class="service" data-t="s4">Electrical & Plumbing</div>
+<div class="service" data-t="s5">Plaster Ceiling</div><div class="service" data-t="s6">Painting</div>
+<div class="service" data-t="s7">Waterproofing</div><div class="service" data-t="s8">Interior & Exterior Design</div>
+</div>
+</section>
+
+<section class="projects" id="projects">
+<h2 data-t="projectsTitle">Real Construction & Renovation Projects</h2>
+<p class="lead" data-t="projectsLead">Actual work photos from JS Interior Design & Build. Click any photo to enlarge.</p>
+<div class="gallery"><button class="photo" onclick="openLightbox('images/projects/project-001.jpg')">
+          <img src="images/projects/project-001.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 1">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-002.jpg')">
+          <img src="images/projects/project-002.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 2">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-003.jpg')">
+          <img src="images/projects/project-003.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 3">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-004.jpg')">
+          <img src="images/projects/project-004.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 4">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-005.jpg')">
+          <img src="images/projects/project-005.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 5">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-006.jpg')">
+          <img src="images/projects/project-006.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 6">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-007.jpg')">
+          <img src="images/projects/project-007.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 7">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-008.jpg')">
+          <img src="images/projects/project-008.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 8">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-009.jpg')">
+          <img src="images/projects/project-009.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 9">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-010.jpg')">
+          <img src="images/projects/project-010.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 10">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-011.jpg')">
+          <img src="images/projects/project-011.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 11">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-012.jpg')">
+          <img src="images/projects/project-012.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 12">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-013.jpg')">
+          <img src="images/projects/project-013.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 13">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-014.jpg')">
+          <img src="images/projects/project-014.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 14">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-015.jpg')">
+          <img src="images/projects/project-015.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 15">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-016.jpg')">
+          <img src="images/projects/project-016.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 16">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-017.jpg')">
+          <img src="images/projects/project-017.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 17">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-018.jpg')">
+          <img src="images/projects/project-018.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 18">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-019.jpg')">
+          <img src="images/projects/project-019.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 19">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-020.jpg')">
+          <img src="images/projects/project-020.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 20">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-021.jpg')">
+          <img src="images/projects/project-021.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 21">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-022.jpg')">
+          <img src="images/projects/project-022.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 22">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-023.jpg')">
+          <img src="images/projects/project-023.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 23">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-024.jpg')">
+          <img src="images/projects/project-024.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 24">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-025.jpg')">
+          <img src="images/projects/project-025.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 25">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-026.jpg')">
+          <img src="images/projects/project-026.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 26">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-027.jpg')">
+          <img src="images/projects/project-027.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 27">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-028.jpg')">
+          <img src="images/projects/project-028.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 28">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-029.jpg')">
+          <img src="images/projects/project-029.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 29">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-030.jpg')">
+          <img src="images/projects/project-030.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 30">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-031.jpg')">
+          <img src="images/projects/project-031.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 31">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-032.jpg')">
+          <img src="images/projects/project-032.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 32">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-033.jpg')">
+          <img src="images/projects/project-033.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 33">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-034.jpg')">
+          <img src="images/projects/project-034.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 34">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-035.jpg')">
+          <img src="images/projects/project-035.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 35">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-036.jpg')">
+          <img src="images/projects/project-036.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 36">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-037.jpg')">
+          <img src="images/projects/project-037.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 37">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-038.jpg')">
+          <img src="images/projects/project-038.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 38">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-039.jpg')">
+          <img src="images/projects/project-039.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 39">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-040.jpg')">
+          <img src="images/projects/project-040.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 40">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-041.jpg')">
+          <img src="images/projects/project-041.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 41">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-042.jpg')">
+          <img src="images/projects/project-042.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 42">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-043.jpg')">
+          <img src="images/projects/project-043.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 43">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-044.jpg')">
+          <img src="images/projects/project-044.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 44">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-045.jpg')">
+          <img src="images/projects/project-045.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 45">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-046.jpg')">
+          <img src="images/projects/project-046.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 46">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-047.jpg')">
+          <img src="images/projects/project-047.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 47">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-048.jpg')">
+          <img src="images/projects/project-048.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 48">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-049.jpg')">
+          <img src="images/projects/project-049.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 49">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-050.jpg')">
+          <img src="images/projects/project-050.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 50">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-051.jpg')">
+          <img src="images/projects/project-051.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 51">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-052.jpg')">
+          <img src="images/projects/project-052.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 52">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-053.jpg')">
+          <img src="images/projects/project-053.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 53">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-054.jpg')">
+          <img src="images/projects/project-054.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 54">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-055.jpg')">
+          <img src="images/projects/project-055.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 55">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-056.jpg')">
+          <img src="images/projects/project-056.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 56">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-057.jpg')">
+          <img src="images/projects/project-057.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 57">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-058.jpg')">
+          <img src="images/projects/project-058.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 58">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-059.jpg')">
+          <img src="images/projects/project-059.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 59">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-060.jpg')">
+          <img src="images/projects/project-060.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 60">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-061.jpg')">
+          <img src="images/projects/project-061.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 61">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-062.jpg')">
+          <img src="images/projects/project-062.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 62">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-063.jpg')">
+          <img src="images/projects/project-063.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 63">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-064.jpg')">
+          <img src="images/projects/project-064.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 64">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-065.jpg')">
+          <img src="images/projects/project-065.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 65">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-066.jpg')">
+          <img src="images/projects/project-066.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 66">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-067.jpg')">
+          <img src="images/projects/project-067.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 67">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-068.jpg')">
+          <img src="images/projects/project-068.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 68">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-069.jpg')">
+          <img src="images/projects/project-069.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 69">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-070.jpg')">
+          <img src="images/projects/project-070.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 70">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-071.jpg')">
+          <img src="images/projects/project-071.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 71">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-072.jpg')">
+          <img src="images/projects/project-072.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 72">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-073.jpg')">
+          <img src="images/projects/project-073.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 73">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-074.jpg')">
+          <img src="images/projects/project-074.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 74">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-075.jpg')">
+          <img src="images/projects/project-075.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 75">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-076.jpg')">
+          <img src="images/projects/project-076.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 76">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-077.jpg')">
+          <img src="images/projects/project-077.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 77">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-078.jpg')">
+          <img src="images/projects/project-078.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 78">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-079.jpg')">
+          <img src="images/projects/project-079.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 79">
+        </button>
+<button class="photo" onclick="openLightbox('images/projects/project-080.jpg')">
+          <img src="images/projects/project-080.jpg" loading="lazy"
+               alt="JS Interior Design & Build Johor Bahru renovation construction project 80">
+        </button></div>
+</section>
+
+<section id="about">
+<div class="about-grid"><div>
+<h2 data-t="aboutTitle">JS Interior Design & Build</h2>
+<p class="lead" data-t="aboutText">Serving Johor with practical renovation, construction and interior solutions. We handle residential and commercial projects with attention to workmanship, coordination and site progress.</p>
+</div><div><h3 data-t="areaTitle">Service Areas</h3><p>Johor Bahru · Skudai · Iskandar Puteri · Kulai · Johor</p>
+<h3 data-t="telTitle">Contact</h3><p>Tel / WhatsApp: 017-760 3828</p></div></div>
+</section>
+
+<section class="contact" id="contact">
+<h2 data-t="contactTitle">Planning a Renovation?</h2>
+<p data-t="contactText">Send us your location, photos and renovation requirements for a quotation.</p>
+<a class="cta" style="background:#111" href="https://wa.me/60177603828" data-t="contactBtn">Contact JS Interior Design & Build</a>
+</section>
+</main>
+<footer>© 2026 JS Interior Design & Build · Johor, Malaysia · js9idbuild.com.my</footer>
+
+<div id="lightbox" onclick="closeLightbox()"><span>&times;</span><img id="lightboxImg" alt="Project photo"></div>
+<script>
+const T={
+en:{navHome:"Home",navServices:"Services",navProjects:"Projects",navAbout:"About",navContact:"Contact",heroTitle:"Build Better. Renovate Smarter.",heroText:"Renovation, construction and interior solutions for homes, shops, offices and commercial spaces across Johor Bahru.",quote:"WhatsApp for Quotation",works:"View Real Projects",servicesTitle:"Our Services",servicesLead:"One team for renovation and construction — from demolition and structural work to finishing and handover.",s1:"Renovation & Extension",s2:"Construction & Cement Works",s3:"Wall & Floor Tiling",s4:"Electrical & Plumbing",s5:"Plaster Ceiling",s6:"Painting",s7:"Waterproofing",s8:"Interior & Exterior Design",projectsTitle:"Real Construction & Renovation Projects",projectsLead:"Actual work photos from JS Interior Design & Build. Click any photo to enlarge.",aboutTitle:"JS Interior Design & Build",aboutText:"Serving Johor with practical renovation, construction and interior solutions. We handle residential and commercial projects with attention to workmanship, coordination and site progress.",areaTitle:"Service Areas",telTitle:"Contact",contactTitle:"Planning a Renovation?",contactText:"Send us your location, photos and renovation requirements for a quotation.",contactBtn:"Contact JS Interior Design & Build"},
+zh:{navHome:"首页",navServices:"服务",navProjects:"工程案例",navAbout:"关于我们",navContact:"联系我们",heroTitle:"专业施工 · 用心装修",heroText:"为新山及柔佛地区住宅、店面、办公室与商业空间提供装修、建筑及室内外设计服务。",quote:"WhatsApp 获取报价",works:"查看真实施工案例",servicesTitle:"我们的服务",servicesLead:"从拆除、泥水及结构工程，到水电、装修和完工交付，一站式施工协调。",s1:"装修与扩建工程",s2:"建筑与泥水工程",s3:"墙砖与地砖工程",s4:"电工与水喉工程",s5:"石膏天花工程",s6:"油漆工程",s7:"防水工程",s8:"室内与外观设计",projectsTitle:"真实施工与装修案例",projectsLead:"JS Interior Design & Build 真实工程照片，点击照片可放大查看。",aboutTitle:"JS Interior Design & Build",aboutText:"服务柔佛地区，为住宅及商业客户提供实用的装修、建筑和设计方案，重视施工品质、工程协调及现场进度。",areaTitle:"服务地区",telTitle:"联系方式",contactTitle:"准备装修？",contactText:"把地点、现场照片和需要施工的项目发给我们，我们可以为您准备报价。",contactBtn:"联系 JS Interior Design & Build"},
+ms:{navHome:"Utama",navServices:"Servis",navProjects:"Projek",navAbout:"Tentang Kami",navContact:"Hubungi",heroTitle:"Bina Lebih Baik. Renovasi Lebih Bijak.",heroText:"Perkhidmatan renovasi, pembinaan dan reka bentuk untuk rumah, kedai, pejabat dan ruang komersial di Johor Bahru.",quote:"WhatsApp Untuk Sebut Harga",works:"Lihat Projek Sebenar",servicesTitle:"Perkhidmatan Kami",servicesLead:"Satu pasukan untuk kerja renovasi dan pembinaan — daripada perobohan dan kerja struktur hingga kemasan dan penyerahan.",s1:"Renovasi & Tambahan Rumah",s2:"Pembinaan & Kerja Simen",s3:"Jubin Dinding & Lantai",s4:"Elektrik & Paip",s5:"Siling Plaster",s6:"Kerja Mengecat",s7:"Kalis Air",s8:"Reka Bentuk Dalaman & Luaran",projectsTitle:"Projek Pembinaan & Renovasi Sebenar",projectsLead:"Foto kerja sebenar JS Interior Design & Build. Klik foto untuk besarkan.",aboutTitle:"JS Interior Design & Build",aboutText:"Menyediakan penyelesaian renovasi, pembinaan dan reka bentuk di Johor untuk projek kediaman dan komersial dengan tumpuan pada mutu kerja dan penyelarasan tapak.",areaTitle:"Kawasan Servis",telTitle:"Hubungi",contactTitle:"Merancang Renovasi?",contactText:"Hantar lokasi, gambar dan keperluan renovasi anda untuk mendapatkan sebut harga.",contactBtn:"Hubungi JS Interior Design & Build"}
+};
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll("[data-t]").forEach(e=>e.textContent=T[l][e.dataset.t]);localStorage.setItem("js9lang",l)}
+setLang(localStorage.getItem("js9lang")||"en");
+function openLightbox(src){document.getElementById("lightboxImg").src=src;document.getElementById("lightbox").style.display="flex"}
+function closeLightbox(){document.getElementById("lightbox").style.display="none"}
+</script>
+</body></html>
