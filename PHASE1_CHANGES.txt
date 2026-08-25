@@ -1,0 +1,7 @@
+JS Interior Design & Build - Phase 1 Optimization
+Date: 2026-08-25
+
+Updated: homepage layout, company trust information, SSM, office address, management contacts, Facebook, mobile layout, SEO metadata, structured data, sitemap and robots.txt.
+Current WhatsApp number retained temporarily.
+Google Maps navigation intentionally NOT linked until the office pin is confirmed at No. 41.
+CNAME retained. DNS / GitHub Pages / HTTPS settings do not need changes.
